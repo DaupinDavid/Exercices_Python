@@ -1,8 +1,8 @@
 def convertir_note(texte):
     try:
-        return float(texte)
+        return float(texte.replace(",", "."))
     except ValueError:
-        return "None"
+        return None
 
 def moyenne(valeurs):
     if not valeurs:
